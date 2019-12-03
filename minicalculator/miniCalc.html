@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini-Calc</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <style>
+        /*choose your own color for the body background*/
+        body{
+            font-size:30px;
+            font-family: 'Fredoka One';
+            background-color:#ff007b;
+        }
+    
+        /* input tags are 30x30 pixels with a 8 pixel rounded dotted border 3 pixels wide
+         * match the font size and font family of the body
+         * note text aligns to the right
+         * colors are up to you*/
+        input{
+            height:30px;
+            width:30px;     
+            border-radius:8px;
+            border:3px dotted #ffe100; 
+            font-size:40px;
+            font-family: 'Fredoka One'; 
+            background-color:#0061ff; 
+        }
+    
+        /* divs are styled very similarly to the input tags, but the text is center middle */
+        div{
+            
+            display: inline-block;
+            vertical-align: top; 
+        }
+
+        /* result is the same height as the other divs, but the width is 60 pixels
+         * note the border is solid*/
+        .result{
+            height:30px; 
+            width:60px; 
+            border:6px solid #0061ff; 
+            border-radius:8px;
+            background-color:#2ff902; 
+        }
+
+        /* width of the button is 80 pixels */
+        .button{
+            cursor:pointer;
+            width:80px; 
+            height:30px; 
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <input id='sumA'> + <input id='sumB'> = <div id='sumTotal' class='result'></div>
+    <div id='sumButton' class='button'>SUM</div>
+</body>
+    <input id='minusA'> - <input id='minusB'> = <div id='minusTotal' class='result'></div>
+    <div id='minusButton' class='button'>minus</div>
+</body>
+    <input id='multiplyA'> * <input id='multiplyB'> = <div id= 'multiplyTotal' class='result' =></div>
+    <div id='multiplyButton' class='button'> mutliply</div>
+</body>
+    <input id='divideA'> / <input id='divideB'> = <div id='divideTotal' class='result'=></div>
+    <div id='divideButton' class='button'> divide </div>
+
+<script src='miniCalc.js'></script>
+</html>
