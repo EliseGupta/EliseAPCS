@@ -4,3 +4,4 @@ $('#fontbutton').click(
     function(){
         var textbox = ($('#textbox').val());
     }
+    
