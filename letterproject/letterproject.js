@@ -1,4 +1,4 @@
-var alphabet = "abcdefgnhijklmnopqrstuvwxyz";
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var name = "";
 $('#fontbutton').click(
     function(){
@@ -8,8 +8,10 @@ $('#fontbutton').click(
         for(var i=0; i<textbox.length;i++){
             var letterIndex = alphabet.indexOf(textbox.charAt(i));
             console.log(letterIndex);
-            var fileName = "L_" + letterIndex + ".png";
+            var fileName = "letters/L_" + letterIndex + ".png";
+           // var fileName = "L_letterIndex.png";
             console.log(fileName);
+            $("body").append("<img class='letter' src=" + fileName + ">"); 
         }
      }
 );
