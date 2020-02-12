@@ -8,6 +8,6 @@ $('#fontbutton').click(
             var letterIndex = alphabet.indexOf(textbox.charAt(i));
             var filename = "letters/L_" + letterindex + ".png";
             console.log(fileName);
-        }
+        } 
     }
 );
