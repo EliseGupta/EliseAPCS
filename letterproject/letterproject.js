@@ -9,7 +9,6 @@ $('#fontbutton').click(
             var letterIndex = alphabet.indexOf(textbox.charAt(i));
             console.log(letterIndex);
             var fileName = "letters/L_" + letterIndex + ".png";
-           // var fileName = "L_letterIndex.png";
             console.log(fileName);
             $("body").append("<img class='letter' src=" + fileName + ">"); 
         }
